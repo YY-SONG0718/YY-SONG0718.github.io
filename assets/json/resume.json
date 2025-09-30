@@ -5,7 +5,7 @@
     "image": "",
     "email": "ysong@ebi.ac.uk",
     "url": "https://yy-song0718.github.io/",
-    "summary": "Yuyao is ",
+    "summary": "Computational biologist with 6 years of experience in international, interdisciplinary academic research settings. Core expertise in analysing large-scale data in genomics and single-cell transcriptomics. Skilled in statistical data analysis, bioinformatics software and pipeline development, and applied algorithm design and machine learning. Proven track record of initiating, leading and completing scientific projects, translating scientific results into peer-reviewed publications, conference presentations and open-source software. Passionate about translating complex biological data into new knowledge and real-world applications.",
     "location": {
       "address": "EMBL-EBI, Wellcome Genome Campus",
       "postalCode": "CB10 1SD",
@@ -21,20 +21,21 @@
       "url": "https://www.ebi.ac.uk/people/person/yuyao-song/",
       "startDate": "2021-10",
       "endDate": "2025-4",
-      "summary": "Develop computational methods for the cross-species comparison of single-cell RNA-seq data.",
-      "highlights": [""]
+      "summary": "Develop computational methods for the cross-species comparison of single-cell RNA-seq data. ",
+      "highlights": ["Designed and developed a scalable and reproducible Nextflow pipeline for cross-species integration benchmark", "Developed a graph-based algorithm for cross-species cell type prediction on heterogeneous graphs", "Consulting scientist for research groups and consortiums"
+    ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
+      "organization": "Cambridge Consulting Network",
+      "location": "Cambridge, UK",
+      "position": "Engagement Manager",
       "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "startDate": "2025.05",
+      "endDate": "2025.10",
+      "summary": "Manage and conduct consulting projects for Cambridge-based biotech startups, including project scoping, team formation, project delivery and client communication.",
+      "highlights": ["Project management and team leadership", "Crtiical thinking and problem solving", "Client communication and presentation skills"]
     }
   ],
   "education": [
@@ -83,6 +84,25 @@
       "awarder": "James P. Taylor Foundation for Open Science",
       "url": "https://jxtxfoundation.org/news/2024-02-21-bg",
       "summary": "Awardee of the JXTX scholarship for outstanding acadenic performance and exceptional contribution to open science. received full funding to attend the Biology of Genomes 2024 conference in CSHL."
+    },
+    {
+      "title": "ECCB conference funding",
+      "date": "2025-7",
+      "awarder": "European Society of Computational Biology",
+      "url": "https://www.iscb.org/ismbeccb2025/home",
+      "summary": "Received funding to present research at the ISMB/ECCB 2025 conference in Liverpool, UK."
+    },
+    {
+      "title": "POSCO Asia Fellowship and Comprehensive Excellence Award of Tsinghua University",
+      "date": "2019-10, 2020-10",
+      "awarder": "Tsinghua University",
+      "summary": "Outstanding academic performance and all-round development award, awarded to top 1% of students in the school of life sciences."
+    },
+    {
+      "title": "Freshmen Scholarship of Tsinghua University",
+      "date": "2017-10",
+      "awarder": "Tsinghua University",
+      "summary": "Gold Medal in the National Olympiad contest in Biology, awarded the Freshmen Scholarship."
     }
   ],
   "certificates": [
@@ -127,29 +147,6 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
   "presentations": [
