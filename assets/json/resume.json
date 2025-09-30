@@ -112,64 +112,91 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
     }
   ],
   "presentations": [
     {
-      "title": "Presentation on Quantum Computing",
-      "event": "TEDx Talk",
-      "date": "2018-01-01",
+      "title": "ISMB/ECCB 2025",
+      "event": "Conference present",
+      "date": "2025-07",
       "url": "https://example.com",
-      "summary": "This talk was about the future of quantum computing and how it might change the world."
+      "summary": "Oral presentation of proceeding paper."
     }
   ],
   "skills": [
     {
-      "name": "Molecular Biology",
+      "name": "Biology",
       "level": "PhD",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Bioinformatics",
+        "Genetics",
+        "Genomics",
+        "Molcular Biology",
+        "Cell Biology",
+        "Evolutionary Biology",
+        "Functional Genomics"
+      ]
+    },
+    {
+      "name": "Programming and data science",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "R",
+        "Bash/Shell",
+        "Nextflow",
+        "Snakemake",
+        "C",
+        "Package development",
+        "Data analysis",
+        "Data visualization",
+        "Statistical analysis",
+        "Git/GitHub",
+        "Docker/Singularity",
+        "Neo4j/Cypher",
+        "HPC computing",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Pytorch",
+        "PyG",
+        "optuna"
+      ]
+    },
+    {
+      "name": "Consulting",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Business analysis",
+        "Research consulting",
+        "Strategy consulting",
+        "Consulting presentation",
+        "Project management",
+        "Team leadership",
+        "Critical thinking",
+        "Problem solving",
+        "Client communication"
+      ]
+    },
+    {
+      "name": "Stage management",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Stage management",
+        "Event organization",
+        "Team coordination",
+        "Logistics management",
+        "Safety management",
+        "Call cues"
       ]
     }
   ],
