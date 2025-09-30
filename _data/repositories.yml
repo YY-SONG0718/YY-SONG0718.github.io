@@ -11,5 +11,6 @@ github_repos:
   - Papatheodorou-Group/GeneSpectraKG
   - Papatheodorou-Group/scGOclust
   - Papatheodorou-Group/scOntoMatch
+  - biocypher/biochatter
   - hemberg-lab/scASfind
   - Functional-Genomics/scrnaseq_python_2023

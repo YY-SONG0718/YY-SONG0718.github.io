@@ -22,7 +22,11 @@
       "startDate": "2021-10",
       "endDate": "2025-4",
       "summary": "Develop computational methods for the cross-species comparison of single-cell RNA-seq data. ",
-      "highlights": ["Designed and developed a scalable and reproducible Nextflow pipeline for cross-species integration benchmark", "Developed a graph-based algorithm for cross-species cell type prediction on heterogeneous graphs", "Consulting scientist for research groups and consortiums"
+      "highlights": ["Designed and developed a scalable and reproducible Nextflow pipeline for executing and benchmarking 28 cross-species scRNA-seq integration strategies.", 
+      "Developed a graph-based machine learning algorithm for cross-species cell type prediction using heterogeneous graphs and knowledge graphs.", 
+      "Consulting scientist for research groups and consortiums including the Biodiversity Cell Atlas, Fly Cell Atlas, Gene Ontology.",
+      "Working with developmental biologists on single cell atlas analysis of Platynereis dumerilii.",
+      "Published papers, taught EBI courses and workshops, supervised interns, presented research at international conferences."
     ]
     }
   ],
@@ -31,9 +35,9 @@
       "organization": "Cambridge Consulting Network",
       "location": "Cambridge, UK",
       "position": "Engagement Manager",
-      "url": "https://example.com",
-      "startDate": "2025.05",
-      "endDate": "2025.10",
+      "url": "https://www.cambridgeconsultingnetwork.co/",
+      "startDate": "2025-05",
+      "endDate": "2025-10",
       "summary": "Manage and conduct consulting projects for Cambridge-based biotech startups, including project scoping, team formation, project delivery and client communication.",
       "highlights": ["Project management and team leadership", "Crtiical thinking and problem solving", "Client communication and presentation skills"]
     }
@@ -61,7 +65,7 @@
       "startDate": "2018-9",
       "endDate": "2021-4",
       "score": "A+",
-      "courses": ["Economics, Programming, Algorithms, Statistics, Accounting, Business Analytics, Management"]
+      "courses": ["Economics, Business Analytics, Algorithms, Statistics, Accounting, Marketing, Management"]
     },
     {
       "institution": "University of Cambridge",
@@ -71,7 +75,6 @@
       "studyType": "PhD",
       "startDate": "2022-10",
       "endDate": "2025-4",
-      "score": "ongoing",
       "courses": [
         "Computational Biology, Machine Learning, Statistics, Bioinformatics, Programming, Data Science, Systems Biology, Genomics, Single-cell RNA-seq, Evolution, Cross-species comparison"
       ]
@@ -107,10 +110,31 @@
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "Structuring Machine Learning Projects",
+      "date": "2025-05",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/verify/TWB44XKMB05U",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "date": "2025-04",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7NW6U61NOLQN",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+      "date": "2022-10",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7CZAXZRHBZUJ",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Advanced Learning Algorithms",
+      "date": "2022-09",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/SRFP9TKESKLH",
       "icon": "fa-solid fa-location-dot"
     }
   ],
@@ -119,7 +143,7 @@
       "title": "ISMB/ECCB 2025",
       "event": "Conference present",
       "date": "2025-07",
-      "url": "https://example.com",
+      "url": "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i571/8199365",
       "summary": "Oral presentation of proceeding paper."
     }
   ],
@@ -146,10 +170,29 @@
         "Python",
         "R",
         "Bash/Shell",
+        "C",
         "Nextflow",
         "Snakemake",
-        "C",
-        "Package development",
+        "Markdown",
+        "LaTeX",
+        "Jupyter",
+        "RMarkdown",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "scikit-learn",
+        "Seaborn/Matplotlib",
+        "Plotly",
+        "Bioconductor",
+        "SingleCellExperiment",
+        "Scanpy",
+        "Anndata",
+        "Seurat",
+        "Biopython",
+        "Bioconda",
+        "Biocontainers",
+        "R package development",
+        "Python package development",
         "Data analysis",
         "Data visualization",
         "Statistical analysis",
@@ -204,41 +247,100 @@
     {
       "language": "English",
       "fluency": "Professional working proficiency",
-      "icon": ""
+      "icon": "🇬🇧"
     },
     {
       "language": "Chinese",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "🇨🇳"
     },
     {
       "language": "German",
       "fluency": "Conversational",
-      "icon": ""
+      "icon": "🇩🇪"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Bioinformatics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Anything coding for biology research"
+      ]
+    },
+    {
+      "name": "Programming",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Cannot stop coding"
+      ]
+    },
+    {
+      "name": "Graph neural networks",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Graphs are beautiful and helpful"
+      ]
+    },
+    {
+      "name": "Cross-species comparison",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "How similar are we, mouse, and fly, and other animals?",
+        "How cell types evolve across species?",
+        "How to find the best model species for human disease research?"
+      ]
+    },
+    {
+      "name": "Critical thinking",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "What are the assumptions behind the methods we use?",
+        "How to make better decisions?",
+        "How to solve problems more effectively?"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "CellGraphX",
+      "summary": "Build, run, and analyse graph-based machine learning models for cross-species cell type prediction using single-cell RNA-seq data.",
+      "highlights": ["PyG", "Heterogeneous graph", "Graph neural network", "optuna hyperparameter optimization"],
+      "startDate": "2024-11",
+      "endDate": "n.a.",
+      "url": "https://github.com/YY-SONG0718/CellGraphX/tree/main/CellGraphX"
+    },
+    {
+      "name": "BENGAL",
+      "summary": "Nextflow pipeline for benchmarking cross-species single-cell RNA-seq integration methods.",
+      "highlights": ["Nextflow", "Singularity", "Cross-species integration", "Benchmarking"],
+      "startDate": "2022-5",
+      "endDate": "2023-12",
+      "url": "https://github.com/Papatheodorou-Group/BENGAL"
+    },
+    {
+      "name": "GeneSpectra",
+      "summary": "Gene expression specificity and distribution classification across cell types for evaluating the ortholog conjecture",
+      "highlights": ["Python package development", "parallisation", "data visualization"],
+      "startDate": "2023-10",
+      "endDate": "n.a.",
+      "url": "https://github.com/Papatheodorou-Group/GeneSpectra"
+    },
+    {
+      "name": "GeneSpectraKG",
+      "summary": "Building a knowledge graph of the cell type pattern of gene expression across species",
+      "highlights": ["Neo4j driver", "Cypher", "Knowledge graph", "BioCypher", "data visualization"],
+      "startDate": "2024-5",
+      "endDate": "n.a.",
+      "url": "https://github.com/Papatheodorou-Group/GeneSpectraKG"
+    },
+    {
+      "name": "scGOclust",
+      "summary": "Leveraging gene ontology to compare cell type functional similarity between remote species",
+      "highlights": ["Gene ontology", "R package development", "data visualization"],
+      "startDate": "2023-10",
+      "endDate": "n.a.",
+      "url": "https://github.com/Papatheodorou-Group/scGOclust"
     }
   ]
 }
