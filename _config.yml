@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: title_yuyao # the website title (if blank, full name will be used instead)
+title: Yuyao Song # the website title (if blank, full name will be used instead)
 first_name: Yuyao
 middle_name: 
 last_name: Song
@@ -194,7 +194,7 @@ exclude:
   - _pages/blog.md
   - _pages/dropdown.md
   - _pages/projects.md
-  - _pages/profile.md
+  - _pages/profiles.md
 
 keep_files:
   - CNAME

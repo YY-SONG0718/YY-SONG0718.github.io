@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Per aspera ad astra
+subtitle: Per aspera ad astra
 
 profile:
   align: right
   image: Yuyao_Song_photo.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>address to be updated</p>
-    <p></p>
-    <p></p>
+  #more_info: >
+  #  <p>address to be updated</p>
+  #  <p></p>
+  #  <p></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
