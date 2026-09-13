@@ -401,23 +401,25 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.8rem;
 
     a {
+      margin: 0 0.45rem;
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-bottom: 0.4rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1.7rem;
+        height: 1.8rem;
+        margin-bottom: 0.2rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.7rem;
+          height: 1.7rem;
         }
       }
 
@@ -538,9 +540,94 @@ footer.sticky-bottom {
 
 // Repositories
 
-@media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
+.repo-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.repo-card-title {
+  font-weight: 600;
+  word-break: break-word;
+
+  .repo-owner {
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+
+  i {
+    margin-right: 0.3rem;
+  }
+}
+
+.repo-card-description {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0.6rem 0;
+  min-height: 2.4em;
+}
+
+.repo-card-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.9rem;
+  row-gap: 0.2rem;
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.repo-lang-dot {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+  background-color: #8b949e; // the colour for any language not listed below
+}
+
+// The colours GitHub uses for each language.
+.repo-lang-python {
+  background-color: #3572a5;
+}
+.repo-lang-r {
+  background-color: #198ce7;
+}
+.repo-lang-jupyter-notebook {
+  background-color: #da5b0b;
+}
+.repo-lang-nextflow {
+  background-color: #3ac486;
+}
+.repo-lang-shell {
+  background-color: #89e051;
+}
+.repo-lang-html {
+  background-color: #e34c26;
+}
+.repo-lang-c {
+  // C++ slugifies to "c", because slugify drops the plus signs.
+  background-color: #f34b7d;
+}
+
+@media (min-width: 576px) {
+  .repo-card {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .repo-card {
+    width: calc(33.333% - 0.7rem);
   }
 }
 

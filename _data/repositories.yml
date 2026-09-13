@@ -1,16 +1,56 @@
+# The repositories shown under "All repositories" on the projects page.
+#
+# The cards render straight from this file, so the page makes no requests to GitHub and
+# never breaks. Edit a description here when it changes on GitHub.
+#
+# The `language` value colours the dot on the card. Add a new language to the palette in
+# _sass/_base.scss if you use one that has no colour yet.
 
-repo_description_lines_max: 2
-
+# Your own GitHub account. Repositories you own drop the owner prefix on their card.
 github_users:
   - YY-SONG0718
 
 github_repos:
-  - YY-SONG0718/CellGraphX
-  - Papatheodorou-Group/BENGAL
-  - Papatheodorou-Group/GeneSpectra
-  - Papatheodorou-Group/GeneSpectraKG
-  - Papatheodorou-Group/scGOclust
-  - Papatheodorou-Group/scOntoMatch
-  - biocypher/biochatter
-  - hemberg-lab/scASfind
-  - Functional-Genomics/scrnaseq_python_2023
+  - name: YY-SONG0718/flybrain-sim
+    description: Simulate neuron activity in the fly brain. The wiring comes from the FlyWire connectome which is from an adult female fly.
+    language: Python
+
+  - name: YY-SONG0718/city-lights-map
+    description: Light up places you've been on a world map and download the resulting map as an image (In development).
+    language: HTML
+
+  - name: YY-SONG0718/CellGraphX
+    description: Cross-species integration with graph learning over weighted edges.
+    language: Python
+
+  - name: Papatheodorou-Group/BENGAL
+    description: A Nextflow pipeline for cross-species integration and assessment of single cell RNA-seq datasets.
+    language: Python, R, nextflow
+
+  - name: Papatheodorou-Group/GeneSpectra
+    description: Gene classification and cross-species comparison of cell types with single cell RNA-seq data.
+    language: Python
+
+  - name: Papatheodorou-Group/GeneSpectraKG
+    description: A BioCypher knowledge graph for GeneSpectra results.
+    language: Python
+
+  - name: Papatheodorou-Group/scGOclust
+    description: Gene Ontology terms to compare single cell RNA-seq data across species.
+    language: R
+
+  - name: Papatheodorou-Group/scOntoMatch
+    description: An R package that unifies the ontology annotation of scRNA-seq datasets to make them comparable across studies.
+    language: R
+
+  - name: biocypher/biochatter
+    description: A backend library for conversational artificial intelligence in biomedicine.
+    language: Python
+
+  - name: hemberg-lab/scASfind
+    description: Identification of cell type-specific alternative splicing events using scASfind.
+    language: R, C++
+
+  - name: Functional-Genomics/scrnaseq_python_2023
+    description: Materials for the EMBL-EBI course on single cell RNA-seq analysis with Python, 2023.
+    language: Python, R, Jupyter Notebook
