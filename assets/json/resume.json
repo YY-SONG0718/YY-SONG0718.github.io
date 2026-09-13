@@ -3,43 +3,82 @@
     "name": "Yuyao Song",
     "label": "Computational Biologist",
     "image": "",
-    "email": "ysong@ebi.ac.uk",
+    "email": "sylvie.yuyao.song@gmail.com",
     "url": "https://yy-song0718.github.io/",
-    "summary": "Computational biologist with 6 years of experience in international, interdisciplinary academic research settings. Core expertise in analysing large-scale data in genomics and single-cell transcriptomics. Skilled in statistical data analysis, bioinformatics software and pipeline development, and applied algorithm design and machine learning. Proven track record of initiating, leading and completing scientific projects, translating scientific results into peer-reviewed publications, conference presentations and open-source software. Passionate about translating complex biological data into new knowledge and real-world applications.",
+    "summary": "Computational biologist with expertise in single cell transcriptomics, multi-omics and machine learning, applied to functional genomics and drug development. First author of three methodological publications on cross-species single cell analysis in Nature Communications, Bioinformatics and Genome Biology, and co-author on consortium papers in Nature and Nature Biotechnology. I have developed several open-source tools for the analysis of single cell RNA-seq data that the research community has adopted. I now apply this expertise to therapeutic target discovery and drug development at an international pharmaceutical company.",
     "location": {
-      "address": "EMBL-EBI, Wellcome Genome Campus",
-      "postalCode": "CB10 1SD",
-      "city": "Hinxton",
+      "city": "Cambridge",
       "countryCode": "UK"
     }
   },
   "work": [
+    {
+      "name": "Insmed Innovation UK Limited",
+      "location": "Cambridge, UK",
+      "position": "Scientist I, Bioinformatics",
+      "url": "https://insmed.com/",
+      "startDate": "2025-11",
+      "summary": "Apply single cell and multi-omics analysis and machine learning to therapeutic target discovery and drug development.",
+      "highlights": [
+        "Led the design and delivery of the first single cell RNA-seq analysis pipeline at Insmed Innovation UK, and deployed production-grade cloud-based Python software that established standardised and reproducible single cell workflows across the organisation.",
+        "Deliver single cell and multi-omics analyses for target discovery and drug development projects, and provide analytical insights at project milestones that shape experimental planning and go or no-go decisions.",
+        "Main contributor to data science projects that apply advanced machine learning to improve experimental data analysis and target prioritisation.",
+        "Foundational member of a new project team and the representative for bioinformatics support, which received strategic approval for new indications and target discovery projects.",
+        "Maintain and improve production pipelines through unit testing and performance optimisation, and evaluate and integrate new tools and external vendors."
+      ]
+    },
     {
       "name": "European Bioinformatics Institute (EMBL-EBI)",
       "location": "Hinxton, UK",
       "position": "Predoctoral fellow",
       "url": "https://www.ebi.ac.uk/people/person/yuyao-song/",
       "startDate": "2021-10",
-      "endDate": "2025-4",
-      "summary": "Develop computational methods for the cross-species comparison of single-cell RNA-seq data. ",
-      "highlights": ["Designed and developed a scalable and reproducible Nextflow pipeline for executing and benchmarking 28 cross-species scRNA-seq integration strategies.", 
-      "Developed a graph-based machine learning algorithm for cross-species cell type prediction using heterogeneous graphs and knowledge graphs.", 
-      "Consulting scientist for research groups and consortiums including the Biodiversity Cell Atlas, Fly Cell Atlas, Gene Ontology.",
-      "Working with developmental biologists on single cell atlas analysis of Platynereis dumerilii.",
-      "Published papers, taught EBI courses and workshops, supervised interns, presented research at international conferences."
-    ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Cambridge Consulting Network",
-      "location": "Cambridge, UK",
-      "position": "Engagement Manager",
-      "url": "https://www.cambridgeconsultingnetwork.co/",
-      "startDate": "2025-05",
       "endDate": "2025-10",
-      "summary": "Manage and conduct consulting projects for Cambridge-based biotech startups, including project scoping, team formation, project delivery and client communication.",
-      "highlights": ["Project management and team leadership", "Crtiical thinking and problem solving", "Client communication and presentation skills"]
+      "summary": "Develop computational methods for the cross-species comparison of single-cell RNA-seq data. ",
+      "highlights": [
+        "Designed and developed a scalable and reproducible Nextflow pipeline for executing and benchmarking 28 cross-species scRNA-seq integration strategies.",
+        "Developed a graph-based machine learning algorithm for cross-species cell type prediction using heterogeneous graphs and knowledge graphs.",
+        "Consulting scientist for research groups and consortiums including the Biodiversity Cell Atlas, Fly Cell Atlas, Gene Ontology.",
+        "Working with developmental biologists on single cell atlas analysis of Platynereis dumerilii.",
+        "Published papers, taught EBI courses and workshops, supervised interns, presented research at international conferences."
+      ]
+    },
+    {
+      "name": "Isidro Cortes-Ciriano Lab, EMBL-EBI",
+      "location": "Hinxton, UK",
+      "position": "Research Intern, Cancer Genomics",
+      "url": "https://www.ebi.ac.uk/research/cortes-ciriano/",
+      "startDate": "2020-09",
+      "endDate": "2021-09",
+      "summary": "Somatic variant analysis for the Human Cancer Model Initiative.",
+      "highlights": [
+        "Called and analysed somatic single nucleotide variants, insertions and deletions, copy numbers and structural variants in Illumina sequencing data from matched patient blood, biopsy and cancer organoid samples."
+      ]
+    },
+    {
+      "name": "Martin Hemberg Lab, Wellcome Sanger Institute",
+      "location": "Hinxton, UK",
+      "position": "Research Intern, Single Cell Alternative Splicing",
+      "url": "https://www.sanger.ac.uk/",
+      "startDate": "2020-06",
+      "endDate": "2021-09",
+      "summary": "Developed scASfind, an R and C++ package for mining alternative splicing patterns.",
+      "highlights": [
+        "Built scASfind to mine alternative splicing patterns in full-length single cell RNA-seq data, which became a first-author paper in Genome Biology."
+      ]
+    },
+    {
+      "name": "Michael Q. Zhang Lab, Tsinghua University",
+      "location": "Beijing, China",
+      "position": "Research Intern, Multi-omics and Clinical Research",
+      "url": "https://www.tsinghua.edu.cn/",
+      "startDate": "2018-09",
+      "endDate": "2020-06",
+      "summary": "Multi-omics analysis of Turner syndrome with clinical collaborators.",
+      "highlights": [
+        "Analysed single cell RNA-seq data of peripheral blood mononuclear cells from patients with Turner syndrome, focused on X chromosome inactivation, and related the findings to ATAC-seq and Hi-C data.",
+        "Worked with clinicians on proprietary datasets and found new phenotype correlations in paediatric Turner syndrome that guide growth hormone therapy, which became a first-author paper."
+      ]
     }
   ],
   "education": [
@@ -68,237 +107,17 @@
       "courses": ["Economics, Business Analytics, Algorithms, Statistics, Accounting, Marketing, Management"]
     },
     {
-      "institution": "University of Cambridge",
+      "institution": "University of Cambridge and EMBL-EBI",
       "location": "Cambridge, UK",
       "url": "https://www.cam.ac.uk/",
-      "area": "Computational Biology",
+      "area": "Bioinformatics",
       "studyType": "PhD",
       "startDate": "2022-10",
-      "endDate": "2025-4",
+      "endDate": "2025-10",
       "courses": [
         "Computational Biology, Machine Learning, Statistics, Bioinformatics, Programming, Data Science, Systems Biology, Genomics, Single-cell RNA-seq, Evolution, Cross-species comparison"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "JXTX scholarship",
-      "date": "2024-5",
-      "awarder": "James P. Taylor Foundation for Open Science",
-      "url": "https://jxtxfoundation.org/news/2024-02-21-bg",
-      "summary": "Awardee of the JXTX scholarship for outstanding acadenic performance and exceptional contribution to open science. received full funding to attend the Biology of Genomes 2024 conference in CSHL."
-    },
-    {
-      "title": "ECCB conference funding",
-      "date": "2025-7",
-      "awarder": "European Society of Computational Biology",
-      "url": "https://www.iscb.org/ismbeccb2025/home",
-      "summary": "Received funding to present research at the ISMB/ECCB 2025 conference in Liverpool, UK."
-    },
-    {
-      "title": "POSCO Asia Fellowship and Comprehensive Excellence Award of Tsinghua University",
-      "date": "2019-10, 2020-10",
-      "awarder": "Tsinghua University",
-      "summary": "Outstanding academic performance and all-round development award, awarded to top 1% of students in the school of life sciences."
-    },
-    {
-      "title": "Freshmen Scholarship of Tsinghua University",
-      "date": "2017-10",
-      "awarder": "Tsinghua University",
-      "summary": "Gold Medal in the National Olympiad contest in Biology, awarded the Freshmen Scholarship."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Structuring Machine Learning Projects",
-      "date": "2025-05",
-      "issuer": "DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/verify/TWB44XKMB05U",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
-      "date": "2025-04",
-      "issuer": "DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/verify/7NW6U61NOLQN",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
-      "date": "2022-10",
-      "issuer": "DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/7CZAXZRHBZUJ",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Advanced Learning Algorithms",
-      "date": "2022-09",
-      "issuer": "DeepLearning.AI",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/SRFP9TKESKLH",
-      "icon": "fa-solid fa-location-dot"
-    }
-  ],
-  "presentations": [
-    {
-      "title": "ISMB/ECCB 2025",
-      "event": "Conference present",
-      "date": "2025-07",
-      "url": "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i571/8199365",
-      "summary": "Oral presentation of proceeding paper."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Biology",
-      "level": "PhD",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Bioinformatics",
-        "Genetics",
-        "Genomics",
-        "Molcular Biology",
-        "Cell Biology",
-        "Evolutionary Biology",
-        "Functional Genomics"
-      ]
-    },
-    {
-      "name": "Programming and data science",
-      "level": "PhD",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "R",
-        "Bash/Shell",
-        "C",
-        "Nextflow",
-        "Snakemake",
-        "Markdown",
-        "LaTeX",
-        "Jupyter",
-        "RMarkdown",
-        "Pandas",
-        "NumPy",
-        "SciPy",
-        "scikit-learn",
-        "Seaborn/Matplotlib",
-        "Plotly",
-        "Bioconductor",
-        "SingleCellExperiment",
-        "Scanpy",
-        "Anndata",
-        "Seurat",
-        "Biopython",
-        "Bioconda",
-        "Biocontainers",
-        "R package development",
-        "Python package development",
-        "Data analysis",
-        "Data visualization",
-        "Statistical analysis",
-        "Git/GitHub",
-        "Docker/Singularity",
-        "Neo4j/Cypher",
-        "HPC computing",
-        "SQL"
-      ]
-    },
-    {
-      "name": "Machine Learning",
-      "level": "PhD",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Pytorch",
-        "PyG",
-        "optuna"
-      ]
-    },
-    {
-      "name": "Consulting",
-      "level": "PhD",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Business analysis",
-        "Research consulting",
-        "Strategy consulting",
-        "Consulting presentation",
-        "Project management",
-        "Team leadership",
-        "Critical thinking",
-        "Problem solving",
-        "Client communication"
-      ]
-    },
-    {
-      "name": "Stage management",
-      "level": "PhD",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Stage management",
-        "Event organization",
-        "Team coordination",
-        "Logistics management",
-        "Safety management",
-        "Call cues"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Professional working proficiency",
-      "icon": "🇬🇧"
-    },
-    {
-      "language": "Chinese",
-      "fluency": "Native speaker",
-      "icon": "🇨🇳"
-    },
-    {
-      "language": "German",
-      "fluency": "Conversational",
-      "icon": "🇩🇪"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Bioinformatics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Anything coding for biology research"
-      ]
-    },
-    {
-      "name": "Programming",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Cannot stop coding"
-      ]
-    },
-    {
-      "name": "Graph neural networks",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Graphs are beautiful and helpful"
-      ]
-    },
-    {
-      "name": "Cross-species comparison",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "How similar are we, mouse, and fly, and other animals?",
-        "How cell types evolve across species?",
-        "How to find the best model species for human disease research?"
-      ]
-    },
-    {
-      "name": "Critical thinking",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "What are the assumptions behind the methods we use?",
-        "How to make better decisions?",
-        "How to solve problems more effectively?"
-      ]
+      ],
+      "score": "Thesis: Comparative Cellular Transcriptomics, Single Cell Approaches to Functional Genomics and Evolution"
     }
   ],
   "projects": [
@@ -341,6 +160,338 @@
       "startDate": "2023-10",
       "endDate": "n.a.",
       "url": "https://github.com/Papatheodorou-Group/scGOclust"
+    }
+  ],
+  "presentations": [
+    {
+      "title": "ISMB/ECCB conference",
+      "event": "Selected talk",
+      "date": "2025",
+      "url": "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i571/8199365",
+      "summary": "Oral presentation of the scGOclust proceedings paper."
+    },
+    {
+      "title": "Biodiversity Cell Atlas meetings",
+      "event": "Selected talk",
+      "date": "2024, 2025",
+      "summary": "Talks at the launch meeting and the annual meetings of the consortium."
+    },
+    {
+      "title": "EMBL-EBI PhD Seminar Day",
+      "event": "Selected talk",
+      "date": "2023, 2025"
+    },
+    {
+      "title": "EMBL-EBI and University of Cambridge collaboration conference",
+      "event": "Selected talk",
+      "date": "2024"
+    },
+    {
+      "title": "Gene Ontology community meetings",
+      "event": "Selected talk",
+      "date": "2024"
+    },
+    {
+      "title": "FlyBase community meetings",
+      "event": "Selected talk",
+      "date": "2024"
+    },
+    {
+      "title": "Biology of Genomes conference",
+      "event": "Selected poster",
+      "date": "2024",
+      "summary": "Poster at Cold Spring Harbor Laboratory."
+    },
+    {
+      "title": "RECOMB conference",
+      "event": "Selected poster",
+      "date": "2024"
+    },
+    {
+      "title": "AIXBio conference",
+      "event": "Participant",
+      "date": "2026"
+    },
+    {
+      "title": "Alan Turing Institute, Omics Data Generation and Analysis Group",
+      "event": "Participant",
+      "date": "2023"
+    }
+  ],
+  "awards": [
+    {
+      "title": "JXTX scholarship",
+      "date": "2024-5",
+      "awarder": "James P. Taylor Foundation for Open Science",
+      "url": "https://jxtxfoundation.org/news/2024-02-21-bg",
+      "summary": "Awardee of the JXTX scholarship for outstanding acadenic performance and exceptional contribution to open science. received full funding to attend the Biology of Genomes 2024 conference in CSHL."
+    },
+    {
+      "title": "ECCB conference funding",
+      "date": "2025-7",
+      "awarder": "European Society of Computational Biology",
+      "url": "https://www.iscb.org/ismbeccb2025/home",
+      "summary": "Received funding to present research at the ISMB/ECCB 2025 conference in Liverpool, UK."
+    },
+    {
+      "title": "POSCO Asia Fellowship and Comprehensive Excellence Award of Tsinghua University",
+      "date": "2019-10, 2020-10",
+      "awarder": "Tsinghua University",
+      "summary": "Outstanding academic performance and all-round development award, awarded to top 1% of students in the school of life sciences."
+    },
+    {
+      "title": "Freshmen Scholarship of Tsinghua University",
+      "date": "2017-10",
+      "awarder": "Tsinghua University",
+      "summary": "Awarded on ranking first nationally in both the written and the oral entrance examination."
+    },
+    {
+      "title": "EMBL-EBI Predoctoral Fellowship",
+      "date": "2021-10",
+      "awarder": "EMBL-EBI",
+      "summary": "Four-year fellowship that covered full tuition and a stipend."
+    },
+    {
+      "title": "Gold Medal, China National Biology Olympiad",
+      "date": "2016-10",
+      "awarder": "Chinese Society for Cell Biology",
+      "summary": "Gold medal, which earned priority admission to Tsinghua University."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Structuring Machine Learning Projects",
+      "date": "2025-05",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/verify/TWB44XKMB05U",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "date": "2025-04",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/verify/7NW6U61NOLQN",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+      "date": "2022-10",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/7CZAXZRHBZUJ",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Advanced Learning Algorithms",
+      "date": "2022-09",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/SRFP9TKESKLH",
+      "icon": "fa-solid fa-location-dot"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Omics data analysis",
+      "level": "Advanced",
+      "icon": "fa-solid fa-dna",
+      "keywords": [
+        "Bulk and single cell RNA-seq",
+        "ATAC-seq",
+        "Perturb-seq",
+        "Dimensionality reduction",
+        "Data integration",
+        "Differential expression",
+        "Multi-omics integration, factor and network based",
+        "Homology mapping",
+        "Domain analysis",
+        "Variant calling",
+        "Spatial omics",
+        "Proteomics",
+        "CRISPR",
+        "3D genomics"
+      ]
+    },
+    {
+      "name": "Databases and resources",
+      "level": "Advanced",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "GTEx",
+        "Human Protein Atlas",
+        "Open Targets",
+        "Ensembl",
+        "Gene Ontology",
+        "PFAM",
+        "NCBI",
+        "CELLxGENE",
+        "EBI Single Cell Expression Atlas",
+        "GEO",
+        "TCGA"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python, advanced, 7 years",
+        "R, advanced, 9 years",
+        "Shell scripting, 5 years",
+        "SQL, 3 years",
+        "numpy, pandas, multiprocessing",
+        "scanpy, scVI, anndata",
+        "tidyverse, Bioconductor, ggplot2",
+        "Seurat, SingleCellExperiment, Rcpp",
+        "Jupyter and R Markdown, 5 years",
+        "Claude Code skills and agents, 1 year"
+      ]
+    },
+    {
+      "name": "Pipelines and infrastructure",
+      "level": "Advanced",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "Nextflow DSL2 and Snakemake, 4 years",
+        "Docker and Singularity",
+        "UNIX and Linux, 5 years",
+        "LSF and Slurm job management",
+        "Google Cloud Platform, 1 year",
+        "Neo4j and Cypher, 3 years",
+        "Git, GitHub and GitLab, 5 years",
+        "BLAST, Bowtie2, BWA, STAR",
+        "samtools, bcftools, vcftools",
+        "Picard, GATK, IGV"
+      ]
+    },
+    {
+      "name": "Machine learning and statistics",
+      "level": "Advanced",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "PyTorch Geometric",
+        "Graph neural network design and training",
+        "Large language models and LangChain",
+        "Single cell and biomedical foundation models",
+        "Sequence-to-function models",
+        "Biostatistics and hypothesis testing",
+        "Network analysis"
+      ]
+    },
+    {
+      "name": "Software development",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cube",
+      "keywords": [
+        "Python package development",
+        "uv, pixi, conda and mamba",
+        "R package development with devtools",
+        "S3 and S4 classes",
+        "CRAN deposition",
+        "R with a C++ backend",
+        "Collaborative coding on GitHub",
+        "Contribution to large existing codebases"
+      ]
+    },
+    {
+      "name": "Consulting",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Business analysis",
+        "Research consulting",
+        "Strategy consulting",
+        "Consulting presentation",
+        "Project management",
+        "Team leadership",
+        "Critical thinking",
+        "Problem solving",
+        "Client communication"
+      ]
+    },
+    {
+      "name": "Stage management",
+      "level": "PhD",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Stage management", "Event organization", "Team coordination", "Logistics management", "Safety management", "Call cues"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency",
+      "icon": "🇬🇧"
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Native speaker",
+      "icon": "🇨🇳"
+    },
+    {
+      "language": "German",
+      "fluency": "Conversational",
+      "icon": "🇩🇪"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Bioinformatics",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Anything coding for biology research"]
+    },
+    {
+      "name": "Programming",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Cannot stop coding"]
+    },
+    {
+      "name": "Graph neural networks",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["Graphs are beautiful and helpful"]
+    },
+    {
+      "name": "Cross-species comparison",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "How similar are we, mouse, and fly, and other animals?",
+        "How cell types evolve across species?",
+        "How to find the best model species for human disease research?"
+      ]
+    },
+    {
+      "name": "Critical thinking",
+      "icon": "fa-solid fa-tag",
+      "keywords": ["What are the assumptions behind the methods we use?", "How to make better decisions?", "How to solve problems more effectively?"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Cambridge Consulting Network",
+      "location": "Cambridge, UK",
+      "position": "Engagement Manager",
+      "url": "https://www.cambridgeconsultingnetwork.co/",
+      "startDate": "2025-05",
+      "endDate": "2025-10",
+      "summary": "Manage and conduct consulting projects for Cambridge-based biotech startups, including project scoping, team formation, project delivery and client communication.",
+      "highlights": [
+        "Project management and team leadership",
+        "Crtiical thinking and problem solving",
+        "Client communication and presentation skills"
+      ]
+    },
+    {
+      "organization": "ADC Theatre",
+      "location": "Cambridge, UK",
+      "position": "Stage Manager, The Waste Land",
+      "url": "https://www.adctheatre.com/",
+      "startDate": "2023-08",
+      "endDate": "2023-11",
+      "summary": "Stage manager for a six-night run of The Waste Land.",
+      "highlights": [
+        "Led a team of seven assistants who performed scene transitions and called cues.",
+        "Ran the stage safety evaluation, the safety training for the actors and the on-stage rehearsals."
+      ]
     }
   ]
 }

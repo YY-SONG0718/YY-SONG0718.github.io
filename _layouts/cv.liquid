@@ -1,83 +1,45 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+{% comment %}
+  This page renders the CV from assets/json/resume.json, which follows the JSON Resume
+  schema at https://jsonresume.org/schema/. The jekyll-get-json plugin loads that file into
+  site.data.resume, and _config.yml points at it under jekyll_get_json.
 
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
+  Edit assets/json/resume.json to change the CV. The page renders the sections in the order
+  the keys appear in that file, so reorder the keys to reorder the page.
 
-    <article>
+  A section appears only when _config.yml lists its key under jsonresume and a matching
+  include exists in _includes/resume/. To add a section, write the include, list the key,
+  and add a branch to the case statement below.
+{% endcomment %}
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {% if site.data.resume %}
       <div class="cv">
         {% for data in site.data.resume %}
           {% if site.jsonresume and site.jsonresume.size > 0 %}
@@ -93,16 +55,18 @@ layout: default
               {% case data[0] %}
                 {% when 'basics' %}
                   {% include resume/basics.liquid %}
-                {% when 'education' %}
-                  {% include resume/education.liquid %}
                 {% when 'work' %}
                   {% include resume/work.liquid %}
-                {% when 'volunteer' %}
-                  {% include resume/volunteer.liquid %}
+                {% when 'education' %}
+                  {% include resume/education.liquid %}
                 {% when 'projects' %}
                   {% include resume/projects.liquid %}
+                {% when 'presentations' %}
+                  {% include resume/presentations.liquid %}
                 {% when 'awards' %}
                   {% include resume/awards.liquid %}
+                {% when 'certificates' %}
+                  {% include resume/certificates.liquid %}
                 {% when 'skills' %}
                   {% include resume/skills.liquid %}
                 {% when 'publications' %}
@@ -111,8 +75,8 @@ layout: default
                   {% include resume/languages.liquid %}
                 {% when 'interests' %}
                   {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
+                {% when 'volunteer' %}
+                  {% include resume/volunteer.liquid %}
                 {% when 'references' %}
                   {% include resume/references.liquid %}
                 {% else %}
@@ -122,6 +86,12 @@ layout: default
           </div>
         {% endfor %}
       </div>
-    </article>
-  </div>
-{% endunless %}
+    {% else %}
+      <p>
+        This page found no CV data. Put your CV in <code>assets/json/resume.json</code> in the
+        <a href="https://jsonresume.org/schema/" target="_blank" rel="noopener noreferrer">JSON Resume</a>
+        format, and check that <code>jekyll_get_json</code> in <code>_config.yml</code> points at it.
+      </p>
+    {% endif %}
+  </article>
+</div>
