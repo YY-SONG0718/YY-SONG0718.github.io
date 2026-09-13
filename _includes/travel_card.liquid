@@ -1,0 +1,25 @@
+<div class="col">
+  <a href="{{ entry.url | relative_url }}">
+    <div class="card h-100 hoverable">
+      {% if entry.img %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=entry.img
+          sizes="250px"
+          alt="travel thumbnail"
+          class="card-img-top"
+        %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title">{{ entry.title }}</h2>
+        <p class="card-text">{{ entry.description }}</p>
+        <p class="post-meta">
+          {% if entry.place %}<i class="fa-solid fa-location-dot fa-sm"></i> {{ entry.place }}{% endif %}
+          {% if entry.place and entry.date %} &nbsp; &middot; &nbsp; {% endif %}
+          {% if entry.date %}<i class="fa-solid fa-calendar fa-sm"></i> {{ entry.date | date: '%B %Y' }}{% endif %}
+        </p>
+      </div>
+    </div>
+  </a>
+</div>

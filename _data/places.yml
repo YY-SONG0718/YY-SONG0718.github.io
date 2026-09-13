@@ -1,0 +1,159 @@
+# Places that light up on the travel map at /travel/map/.
+#
+# Add one entry per place. Three forms work:
+#
+#   - Tokyo                      # a bare name. The map looks up the coordinates in its
+#                                # built-in list of about 350 cities. Accents and punctuation do not matter.
+#   - name: Lisbon
+#     journal: lisbon            # links the light to _travel/lisbon.md
+#   - name: Hinterzarten         # a place outside the built-in list needs coordinates.
+#     country: Germany
+#     lat: 47.9033
+#     lon: 8.1053
+#
+# To find coordinates, right-click a point in Google Maps and copy the two numbers, or
+# open the place on https://www.openstreetmap.org and read lat/lon from the URL.
+#
+# The old City Lights page exported a JSON array of {name, country, lat, lon} objects.
+# You can paste that array here as it is, because YAML accepts JSON.
+#
+# Commit the change and the site rebuilds in about two minutes.
+
+# ======== Europe ========
+
+# Czechia
+- name: Prague
+
+# France
+- name: Paris
+- name: Rouen
+
+# Germany
+- name: Heidelberg
+- name: Munich
+- name: Dusseldorf
+- name: Frankfurt
+- name: Bielefeld
+- name: Stuttgart
+- name: Cologne
+
+# Greece
+- name: Zakynthos
+
+# Italy
+- name: Rome
+- name: Florence
+- name: Venice
+- name: Padua
+- name: Naples
+- name: Dolomites # Cortina d'Ampezzo; move the point if you stayed elsewhere
+  country: Italy
+  lat: 46.5405
+  lon: 12.1357
+
+# Netherlands
+- name: Amsterdam
+- name: Maastricht
+- name: The Hague
+- name: Utrecht
+- name: Rotterdam
+- name: Eindhoven
+
+# Portugal
+- name: Lisbon
+
+# Spain
+- name: Barcelona
+- name: Madrid
+- name: Seville
+
+# Switzerland
+- name: Zurich
+- name: Geneva
+- name: Lausanne
+- name: Basel
+
+# United Kingdom
+- name: Cambridge
+  country: United Kingdom
+  lat: 52.2053
+  lon: 0.1218
+- name: London
+- name: Oxford
+- name: Brighton
+- name: Edinburgh
+- name: Glasgow
+- name: Liverpool
+- name: St Ives
+- name: Bath
+- name: Bristol
+- name: Penzance
+- name: Birmingham
+
+# ======== Asia ========
+
+# China
+- name: Beijing
+- name: Shanghai
+- name: Hong Kong
+- name: Suzhou
+- name: Dalian
+- name: Shenzhen
+- name: Guangzhou
+- name: Hangzhou
+- name: Chengdu
+- name: Xi'an
+- name: Wuhan
+- name: Changsha
+- name: Chongqing
+- name: Nanjing
+- name: Shenyang
+- name: Dunhuang
+- name: Harbin
+- name: Jilin
+- name: Changchun
+- name: Jinan
+- name: Qingdao
+- name: Tianjin
+- name: Xining
+- name: Kunming
+- name: Lijiang
+- name: Dali
+- name: Sanya
+- name: Xiamen
+- name: Nanchang
+- name: Taiyuan
+
+# Indonesia
+- name: Bali
+
+# Japan
+- name: Tokyo
+- name: Yokohama
+
+# Malaysia
+- name: Kuala Lumpur
+
+# Singapore
+- name: Singapore
+
+# ======== North America ========
+
+# Canada
+- name: Vancouver
+
+# Cuba
+- name: Havana
+
+# Mexico
+- name: Mexico City
+- name: Cancun
+
+# United States
+- name: New York
+- name: Boston
+- name: Washington, D.C.
+- name: Los Angeles
+- name: San Francisco
+- name: Seattle
+- name: Las Vegas

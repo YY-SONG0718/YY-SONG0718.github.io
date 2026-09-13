@@ -1,0 +1,161 @@
+// Travel map at /travel/map/. The map frame keeps the dark "city lights" look in both
+// site themes. The counters and the place list below it follow the site theme.
+
+.travel-map-frame {
+  --glow: #ffd27a;
+  --glow-core: #fff3d6;
+  position: relative;
+  height: 68vh;
+  min-height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  background: #1c1f24;
+}
+
+#travel-map {
+  position: absolute;
+  inset: 0;
+  background: #1c1f24;
+}
+
+// Glowing markers. Leaflet inserts these class names, so purgecss also sees them in
+// travel-map.js.
+.citylight {
+  position: relative;
+
+  .core {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--glow-core);
+    box-shadow:
+      0 0 6px 2px var(--glow),
+      0 0 14px 6px rgba(255, 200, 110, 0.75),
+      0 0 26px 12px rgba(255, 180, 80, 0.35);
+  }
+
+  .pulse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgba(255, 210, 122, 0.5);
+    animation: citylight-pulse 2.6s ease-out infinite;
+  }
+}
+
+@keyframes citylight-pulse {
+  0% {
+    width: 7px;
+    height: 7px;
+    opacity: 0.7;
+  }
+  100% {
+    width: 42px;
+    height: 42px;
+    opacity: 0;
+  }
+}
+
+.travel-map-frame {
+  .leaflet-tooltip.citytip {
+    background: #0a0f18;
+    border: 1px solid #1e2735;
+    color: #e8edf5;
+    border-radius: 7px;
+    font-size: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  }
+  .leaflet-tooltip.citytip:before {
+    display: none;
+  }
+  .leaflet-container {
+    background: #1c1f24;
+  }
+  // Cool the grey tiles towards the night-blue frame.
+  .leaflet-tile-pane {
+    filter: brightness(0.8) contrast(1.05) sepia(0.2) hue-rotate(180deg);
+  }
+}
+
+.travel-stats {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+
+  .stat {
+    flex: 1;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 11px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .n {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--global-theme-color);
+  }
+  .l {
+    font-size: 11px;
+    color: var(--global-text-color-light);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 2px;
+  }
+}
+
+.travel-place {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--global-card-bg-color);
+  }
+  .g {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ffd27a;
+    flex: none;
+    box-shadow:
+      0 0 5px 1px #ffd27a,
+      0 0 10px 3px rgba(255, 210, 122, 0.5);
+  }
+  .info {
+    flex: 1;
+    min-width: 0;
+  }
+  .nm {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .co {
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+  }
+  .journal {
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+}
+
+.travel-unresolved {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+}
