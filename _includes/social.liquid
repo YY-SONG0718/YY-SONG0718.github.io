@@ -1,4 +1,12 @@
+{% comment %}
+  site.social_icons in _config.yml limits which icons appear. Leave it empty to show every
+  entry of _data/socials.yml. Entries stay in the data file either way, because other pages
+  read them: scholar_userid drives the citation badges on the publications page.
+{% endcomment %}
 {% for social in site.data.socials %}
+  {% if site.social_icons and site.social_icons.size > 0 %}
+    {% unless site.social_icons contains social[0] %}{% continue %}{% endunless %}
+  {% endif %}
   {% case social[0] %}
     {% when 'academia_edu' %}
       <a href="https://{{ social[1].organization }}.academia.edu/{{ social[1].username }}" title="Academia.edu"><i class="ai ai-academia"></i></a>
