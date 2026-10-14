@@ -91,6 +91,13 @@
 - name: Bristol
 - name: Penzance
 - name: Birmingham
+- name: York
+- name: Leeds
+- name: Whitby
+  journal: whitby
+  country: United Kingdom
+  lat: 54.4863
+  lon: -0.6133
 
 # ======== Asia ========
 
