@@ -77,6 +77,11 @@ ninja.data = [{
           description: "Delete this file once your first real journal is written. It exists so you can see how a card and a page look.",
           section: "Travel",handler: () => {
               window.location.href = "/travel/example-first-trip/";
+            },},{id: "travel-whitby",
+          title: 'Whitby',
+          description: "A walk up to the abbey ruins on the cliff above the harbour, and the town that gave Dracula his landing place.",
+          section: "Travel",handler: () => {
+              window.location.href = "/travel/whitby/";
             },},{
         id: 'social-email',
         title: 'email',
