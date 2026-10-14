@@ -72,11 +72,31 @@ ninja.data = [{
           description: "An R package that compares cell types between distant species through Gene Ontology terms rather than orthologous genes.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/scgoclust/";
-            },},{id: "travel-example-journal",
-          title: 'Example journal',
-          description: "Delete this file once your first real journal is written. It exists so you can see how a card and a page look.",
+            },},{id: "travel-dolomites",
+          title: 'Dolomites',
+          description: "Three days in April between Cadore, Lago di Braies and Val di Funes, with snow still on the peaks.",
           section: "Travel",handler: () => {
-              window.location.href = "/travel/example-first-trip/";
+              window.location.href = "/travel/dolomites/";
+            },},{id: "travel-zakynthos",
+          title: 'Zakynthos',
+          description: "A boat trip around the west and north coast, to the shipwreck at Navagio and the Blue Caves.",
+          section: "Travel",handler: () => {
+              window.location.href = "/travel/zakynthos/";
+            },},{id: "travel-shanxi",
+          title: 'Shanxi',
+          description: "Five days in June between Taiyuan and Datong, for the bronzes, the Jinci temple, the Yungang grottoes and the painted clay figures of the Liao temples.",
+          section: "Travel",handler: () => {
+              window.location.href = "/travel/shanxi/";
+            },},{id: "travel-geneva-and-lausanne",
+          title: 'Geneva and Lausanne',
+          description: "Four days on Lake Geneva in September, between the museums of Geneva and the lakeside at Ouchy.",
+          section: "Travel",handler: () => {
+              window.location.href = "/travel/geneva-lausanne/";
+            },},{id: "travel-rothenburg",
+          title: 'Rothenburg',
+          description: "A day inside the walls of Rothenburg ob der Tauber, the best kept medieval town in Franconia.",
+          section: "Travel",handler: () => {
+              window.location.href = "/travel/rothenburg/";
             },},{id: "travel-whitby",
           title: 'Whitby',
           description: "A walk up to the abbey ruins on the cliff above the harbour, and the town that gave Dracula his landing place.",
