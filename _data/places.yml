@@ -38,9 +38,11 @@
 - name: Cologne
 - name: Trier
 - name: Rothenburg ob der Tauber
+  journal: rothenburg
 
 # Greece
 - name: Zakynthos
+  journal: zakynthos
 
 # Italy
 - name: Rome
@@ -49,6 +51,7 @@
 - name: Padua
 - name: Naples
 - name: Dolomites # Cortina d'Ampezzo; move the point if you stayed elsewhere
+  journal: dolomites
   country: Italy
   lat: 46.5405
   lon: 12.1357
@@ -72,7 +75,9 @@
 # Switzerland
 - name: Zurich
 - name: Geneva
+  journal: geneva-lausanne
 - name: Lausanne
+  journal: geneva-lausanne
 - name: Basel
 
 # United Kingdom
@@ -132,6 +137,9 @@
 - name: Xiamen
 - name: Nanchang
 - name: Taiyuan
+  journal: shanxi
+- name: Datong
+  journal: shanxi
 
 # Indonesia
 - name: Bali

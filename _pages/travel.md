@@ -13,10 +13,10 @@ children:
     permalink: /travel/map/
 ---
 
-<!-- One file per journey in _travel/. Newest first. -->
+<!-- One file per journey in _travel/. Oldest first. -->
 
 <div class="projects">
-  {% assign entries = site.travel | sort: "date" | reverse %}
+  {% assign entries = site.travel | sort: "date" %}
   {% if entries.size > 0 %}
     <div class="row row-cols-1 row-cols-md-3">
       {% for entry in entries %}

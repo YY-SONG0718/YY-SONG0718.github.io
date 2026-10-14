@@ -3,7 +3,7 @@ layout: page
 title: Whitby
 description: A walk up to the abbey ruins on the cliff above the harbour, and the town that gave Dracula his landing place.
 place: Whitby, United Kingdom
-date: 2026-10-14
+date: 2026-10-10
 img: assets/img/travel/whitby/abbey.jpg
 ---
 

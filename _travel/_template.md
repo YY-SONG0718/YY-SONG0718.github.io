@@ -3,7 +3,7 @@ layout: page
 title: City or region
 description: One sentence that says what this journey was about.
 place: City, Country
-date: 2026-04-12 # the cards sort on this date, newest first
+date: 2026-04-12 # the cards sort on this date, oldest first
 img: assets/img/travel/YOUR-FOLDER/cover.jpg # the card thumbnail
 ---
 
