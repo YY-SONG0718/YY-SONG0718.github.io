@@ -62,17 +62,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/agents/";
           
         },
-      },{id: "post-reflect-on-my-phd-journey",
-        
-          title: "Reflect on my PhD journey",
-        
-        description: "Example for Yuyao",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/phd/";
-          
-        },
       },{id: "projects-bengal",
           title: 'BENGAL',
           description: "A Nextflow pipeline that benchmarks batch correction methods for cross-species single cell integration.",
