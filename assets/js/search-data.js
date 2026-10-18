@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-reflect-on-my-phd-journey",
+        },{id: "post-thoughts-on-agentic-coding",
+        
+          title: "Thoughts on agentic coding",
+        
+        description: "A quest to regain joy in the age of agentic coding",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/agents/";
+          
+        },
+      },{id: "post-reflect-on-my-phd-journey",
         
           title: "Reflect on my PhD journey",
         
