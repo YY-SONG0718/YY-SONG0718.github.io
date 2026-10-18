@@ -10,6 +10,16 @@ d-byline h3 {
   color: var(--global-text-color) !important;
 }
 
+/* Hide the Affiliations column of the byline and give the authors the full width. */
+d-byline .authors-affiliations {
+  grid-template-columns: 1fr !important;
+}
+
+d-byline .authors-affiliations h3:nth-of-type(2),
+d-byline p.affiliation {
+  display: none !important;
+}
+
 d-byline a,
 d-article d-byline a {
   color: var(--global-text-color) !important;
