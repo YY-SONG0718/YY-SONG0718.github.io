@@ -22,8 +22,7 @@ body {
     height: 45vh;
     z-index: -1;
     pointer-events: none;
-    background:
-      repeating-linear-gradient(90deg, var(--global-grid-line-color) 0 2px, transparent 2px 80px),
+    background: repeating-linear-gradient(90deg, var(--global-grid-line-color) 0 2px, transparent 2px 80px),
       repeating-linear-gradient(0deg, var(--global-grid-line-color) 0 2px, transparent 2px 60px);
     transform: perspective(320px) rotateX(62deg);
     transform-origin: bottom;
