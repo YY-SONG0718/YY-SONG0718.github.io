@@ -218,6 +218,11 @@ ul.task-list input[type="checkbox"] {
 
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+    // MDB sets this color with the same three-class selector, so this rule needs it too.
+    .card-text {
+      color: var(--global-card-text-color);
+    }
   }
 }
 
@@ -606,7 +611,7 @@ footer.sticky-bottom {
 }
 
 .repo-card-description {
-  color: var(--global-text-color-light);
+  color: var(--global-card-text-color);
   font-size: 0.85rem;
   margin: 0.5rem 0 0.6rem 0;
   min-height: 2.4em;

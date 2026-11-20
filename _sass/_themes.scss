@@ -22,6 +22,7 @@
   --global-code-bg-color: #{rgba($purple-blue-color, 0.07)};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
+  --global-card-text-color: #{$black-color}; // for the descriptions on project and repository cards
   --global-theme-color: #{$purple-blue-color};
   --global-hover-color: #{$purple-blue-color};
   --global-hover-text-color: #{$white-color};
@@ -101,6 +102,7 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$night-text-color};
   --global-text-color-light: #{$night-text-light-color};
+  --global-card-text-color: #{$night-text-light-color};
   --global-theme-color: #{$suede-light-color};
   --global-hover-color: #{$suede-light-color};
   --global-hover-text-color: #{$white-color};
