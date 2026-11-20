@@ -17,7 +17,9 @@
   --global-glow-color: #{rgba($lime-color, 0.7)};
   --global-sun-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22400%22%20height%3D%22400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23cfd023%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238a8bd0%22/%3E%3C/linearGradient%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22190%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23g%29%22/%3E%3Crect%20x%3D%220%22%20y%3D%22215%22%20width%3D%22400%22%20height%3D%226%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22245%22%20width%3D%22400%22%20height%3D%229%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22275%22%20width%3D%22400%22%20height%3D%2212%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22305%22%20width%3D%22400%22%20height%3D%2215%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22335%22%20width%3D%22400%22%20height%3D%2218%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22365%22%20width%3D%22400%22%20height%3D%2222%22%20fill%3D%22%236061a4%22/%3E%3C/g%3E%3C/svg%3E");
   --global-grid-line-color: rgba(255, 255, 255, 0.35);
-  --global-glass-color: rgba(255, 255, 255, 0.6);
+  --global-flute-color: rgba(255, 255, 255, 0.06); // the light stripes of the fluted glass
+  --global-flute-shadow-color: rgba(0, 0, 0, 0.04); // the dark stripes of the fluted glass
+  --global-glass-color: rgba(255, 255, 255, 0.8);
   --global-glass-border-color: rgba(255, 255, 255, 0.7);
   --global-code-bg-color: #{rgba($purple-blue-color, 0.07)};
   --global-text-color: #{$black-color};
@@ -92,6 +94,8 @@ html[data-theme="dark"] {
   --global-glow-color: #{rgba($beds-light-color, 0.6)};
   --global-sun-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22400%22%20height%3D%22400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23e8b2a4%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2327488a%22/%3E%3C/linearGradient%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22190%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23g%29%22/%3E%3Crect%20x%3D%220%22%20y%3D%22215%22%20width%3D%22400%22%20height%3D%226%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22245%22%20width%3D%22400%22%20height%3D%229%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22275%22%20width%3D%22400%22%20height%3D%2212%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22305%22%20width%3D%22400%22%20height%3D%2215%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22335%22%20width%3D%22400%22%20height%3D%2218%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22365%22%20width%3D%22400%22%20height%3D%2222%22%20fill%3D%22%23081229%22/%3E%3C/g%3E%3C/svg%3E");
   --global-grid-line-color: rgba(255, 255, 255, 0.25);
+  --global-flute-color: rgba(255, 255, 255, 0.07);
+  --global-flute-shadow-color: rgba(0, 0, 0, 0.05);
   --global-glass-color: #{rgba($rich-blue-night-color, 0.74)};
   --global-glass-border-color: rgba(255, 255, 255, 0.18);
   --global-navbar-bg-color: #{rgba($rich-blue-night-color, 0.8)};
