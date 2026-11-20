@@ -49,6 +49,44 @@ table.table a {
   }
 }
 
+// Links in the text have a lime underline. The link text stays purple blue, so it is easy to read.
+article p a,
+.post-content li a {
+  text-decoration: underline;
+  text-decoration-color: var(--global-highlight-color);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+// All headings use the same italic serif font.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+}
+
+// Page titles and card titles are purple blue.
+h1.post-title,
+h3.card-title {
+  font-weight: 400;
+  color: var(--global-theme-color);
+}
+
+// Page titles and CV section titles have a short lime bar below them.
+h1.post-title::after,
+h3.card-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  background-color: var(--global-highlight-color);
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
@@ -58,7 +96,7 @@ table.table a {
 
 blockquote {
   background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
+  border-left: 5px solid var(--global-highlight-color);
   margin: 1.5em 0;
   padding: 1em;
   font-size: 1.2rem;
@@ -245,9 +283,9 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  border-bottom: var(--global-navbar-border);
+  background-color: var(--global-navbar-bg-color);
+  backdrop-filter: blur(16px);
 }
 
 .navbar .dropdown-menu {
@@ -284,24 +322,28 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-navbar-text-color);
+    font-weight: 700;
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-navbar-text-color);
+    font-weight: 600;
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-navbar-active-color);
+      box-shadow: inset 0 -3px 0 var(--global-highlight-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    color: var(--global-navbar-active-color);
+    box-shadow: inset 0 -3px 0 var(--global-highlight-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-navbar-active-color);
     }
   }
 
@@ -348,7 +390,7 @@ ul.task-list input[type="checkbox"] {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color);
+    background-color: var(--global-navbar-text-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -388,10 +430,10 @@ ul.task-list input[type="checkbox"] {
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color);
+  color: var(--global-navbar-text-color);
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-navbar-active-color);
   }
 }
 
@@ -520,7 +562,7 @@ footer.sticky-bottom {
       border-color: var(--global-divider-color);
 
       .badge {
-        color: var(--global-card-bg-color) !important;
+        color: var(--global-bg-color) !important;
         background-color: var(--global-theme-color) !important;
       }
     }
@@ -777,7 +819,7 @@ footer.sticky-bottom {
 
   h2.category {
     color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    border-bottom: 2px solid var(--global-highlight-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -808,7 +850,7 @@ footer.sticky-bottom {
 
   h2.bibliography {
     color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
+    border-top: 2px solid var(--global-highlight-color);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
@@ -1056,11 +1098,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-highlight-color);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-highlight-color);
 }
 
 .progress-container {
@@ -1074,7 +1116,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-highlight-color);
   width: 0%;
   display: block;
   height: inherit;
@@ -1429,6 +1471,10 @@ ninja-keys::part(ninja-input-wrapper) {
   .arrow:before {
     border-bottom-color: var(--global-divider-color);
   }
+}
+
+::selection {
+  background-color: var(--global-highlight-color);
 }
 
 // highlight-search-term

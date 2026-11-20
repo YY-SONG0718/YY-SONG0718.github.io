@@ -6,27 +6,34 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{$off-white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
+  --global-bg-color: #{$vanilla-light-color};
+  --global-page-color: #{$purple-blue-color};
+  --global-navbar-bg-color: rgba(255, 255, 255, 0.55);
+  --global-navbar-text-color: #{$grey-color-dark};
+  --global-navbar-active-color: #{$purple-blue-color};
+  --global-navbar-border: 3px solid #{$lime-color};
+  // The page background is a city pop sunset seen through fluted frosted glass.
+  --global-sky-bottom-color: #{$periwinkle-color};
+  --global-glow-color: #{rgba($lime-color, 0.7)};
+  --global-sun-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22400%22%20height%3D%22400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23cfd023%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%238a8bd0%22/%3E%3C/linearGradient%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22190%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23g%29%22/%3E%3Crect%20x%3D%220%22%20y%3D%22215%22%20width%3D%22400%22%20height%3D%226%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22245%22%20width%3D%22400%22%20height%3D%229%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22275%22%20width%3D%22400%22%20height%3D%2212%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22305%22%20width%3D%22400%22%20height%3D%2215%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22335%22%20width%3D%22400%22%20height%3D%2218%22%20fill%3D%22%236061a4%22/%3E%3Crect%20x%3D%220%22%20y%3D%22365%22%20width%3D%22400%22%20height%3D%2222%22%20fill%3D%22%236061a4%22/%3E%3C/g%3E%3C/svg%3E");
+  --global-grid-line-color: rgba(255, 255, 255, 0.35);
+  --global-glass-color: rgba(255, 255, 255, 0.6);
+  --global-glass-border-color: rgba(255, 255, 255, 0.7);
+  --global-code-bg-color: #{rgba($purple-blue-color, 0.07)};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$purple-blue-color};
+  --global-hover-color: #{$purple-blue-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-bg-color: #{$purple-blue-dark-color};
+  --global-footer-text-color: #{$vanilla-color};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
+  --global-highlight-color: #{$lime-color};
+  --global-back-to-top-bg-color: #{$lime-color};
+  --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
 
@@ -78,19 +85,31 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #{$rich-blue-deep-color};
+  --global-page-color: #{$rich-blue-night-color};
+  --global-sky-bottom-color: #{$rich-blue-color};
+  --global-glow-color: #{rgba($beds-light-color, 0.6)};
+  --global-sun-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22400%22%20height%3D%22400%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23e8b2a4%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2327488a%22/%3E%3C/linearGradient%3E%3CclipPath%20id%3D%22c%22%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22190%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23c%29%22%3E%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23g%29%22/%3E%3Crect%20x%3D%220%22%20y%3D%22215%22%20width%3D%22400%22%20height%3D%226%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22245%22%20width%3D%22400%22%20height%3D%229%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22275%22%20width%3D%22400%22%20height%3D%2212%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22305%22%20width%3D%22400%22%20height%3D%2215%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22335%22%20width%3D%22400%22%20height%3D%2218%22%20fill%3D%22%23081229%22/%3E%3Crect%20x%3D%220%22%20y%3D%22365%22%20width%3D%22400%22%20height%3D%2222%22%20fill%3D%22%23081229%22/%3E%3C/g%3E%3C/svg%3E");
+  --global-grid-line-color: rgba(255, 255, 255, 0.25);
+  --global-glass-color: #{rgba($rich-blue-night-color, 0.74)};
+  --global-glass-border-color: rgba(255, 255, 255, 0.18);
+  --global-navbar-bg-color: #{rgba($rich-blue-night-color, 0.8)};
+  --global-navbar-text-color: #{$night-text-color};
+  --global-navbar-active-color: #{$suede-light-color};
+  --global-navbar-border: 3px solid #{$beds-light-color};
+  --global-highlight-color: #{$beds-light-color};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
+  --global-text-color: #{$night-text-color};
+  --global-text-color-light: #{$night-text-light-color};
+  --global-theme-color: #{$suede-light-color};
+  --global-hover-color: #{$suede-light-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{$rich-blue-black-color};
+  --global-footer-text-color: #{$night-text-color};
+  --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: rgba(255, 255, 255, 0.16);
+  --global-card-bg-color: rgba(255, 255, 255, 0.08);
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},
