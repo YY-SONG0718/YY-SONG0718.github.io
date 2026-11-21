@@ -90,10 +90,11 @@ d-article {
     grid-row: auto / span 4;
     justify-self: end;
     margin-top: 0em;
-    padding-left: 2em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 2em;
     border-right: 1px solid var(--global-divider-color);
-    width: calc(max(70%, 300px));
+    // The contents box fills the columns to the left of the text, so it stays inside the blog post card.
+    width: 100%;
     margin-right: 0px;
     margin-top: 0em;
     display: grid;

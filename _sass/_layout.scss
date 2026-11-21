@@ -57,7 +57,8 @@ body.fixed-top-nav {
 
 .post.distill {
   width: calc(100% - 2rem);
-  max-width: $max-content-width;
+  // Blog posts get a wider card than other pages, so the contents box fits to the left of the text.
+  max-width: 1300px;
   margin: 4.5rem auto 4rem;
   padding: 1rem 0 2rem;
   overflow: hidden;
