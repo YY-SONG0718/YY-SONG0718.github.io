@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-thoughts-on-agentic-coding",
+        },{id: "post-deleting-promoters-in-alphagenome-2",
+        
+          title: "Deleting promoters in AlphaGenome 2",
+        
+        description: "A small in silico experiment on what a sequence model predicts when a promoter disappears",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/alphagenome-promoter/";
+          
+        },
+      },{id: "post-thoughts-on-agentic-coding",
         
           title: "Thoughts on agentic coding",
         
